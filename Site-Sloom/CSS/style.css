@@ -1,0 +1,344 @@
+header {
+    background-color: #ffffff;
+    border-bottom: solid;
+    border-width: 10px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #9A1ABC, #F93686, #FFCC00);
+}
+
+#logotitre {
+    width: 300px;
+    height: auto;
+}
+
+#idheader {
+    align-items: center;
+    margin-top: 16px;
+}
+
+.nav_btn {
+    margin: 5px;
+    padding: 8px 16px 8px 16px;
+    border: 6px solid transparent;
+    border-radius: 6px;
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+/*Bouton index*/
+#navbtn_index {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #9A1ABC, #cc14d2) border-box;
+    color: black;
+}
+
+#navbtn_index:hover {
+    background: linear-gradient(to right, #9A1ABC, #cc14d2) border-box;
+    color: white;
+}
+
+/*Boutton offres et Boutton contact */
+#navbtn-offres, #navbtn-contact {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #F93686, #f936d5) border-box;
+    color: black;
+}
+
+#navbtn-offres:hover, #navbtn-contact:hover {
+    background: linear-gradient(to right, #F93686, #f936d5) border-box;
+    color: white;
+}
+
+/* Bouton réservation et Bouton connexion */
+#navbtn-reservation, #navbtn-connexion {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #FFCC00, #ffa200) border-box;
+    color: black;
+}
+
+#navbtn-reservation:hover, #navbtn-connexion:hover {
+    background: linear-gradient(to right, #FFCC00, #ffa200) border-box;
+    color: white;
+}
+
+
+/* Bouton retour */
+#navbtn_retour {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #9A1ABC, #F93686, #FFCC00) border-box;
+    color: black;
+}
+
+#navbtn_retour:hover {
+    background: linear-gradient(to right, #9A1ABC, #F93686, #FFCC00) border-box;
+    color: white;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    height: 220px;
+    /* Hauteur compacte comme dans l'image */
+    overflow: hidden;
+    width: 100%;
+}
+
+.hero-left {
+    background-color: #ffffff;
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    line-height: 1.15;
+    color: #000000;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-left p {
+    margin: 0;
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Colonne image droite */
+.hero-right {
+    background-size: cover;
+    background-position: center;
+    min-height: 220px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #Intro.hero {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .hero-right {
+        min-height: 180px;
+    }
+
+    .hero-left {
+        padding: 20px 24px;
+    }
+
+    .hero-left h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* ===========================
+   Reste de la page
+   =========================== */
+#divun {
+    background-color: rgb(229, 207, 179);
+    padding: 5px;
+    font-style: italic;
+}
+
+#carousel {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#premierdiv {
+    background-color: rgb(225, 187, 139);
+}
+
+/* === SECTION STATS + CTA === */
+#seconddiv {
+    background-color: #f7f7f7;
+}
+
+#stats-banner {
+    display: flex;
+    border-bottom: 0.5px solid #e0e0e0;
+}
+
+.stat-card {
+    flex: 1;
+    text-align: center;
+    padding: 40px 20px;
+    border-right: 0.5px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.stat-card:last-child {
+    border-right: none;
+}
+
+.stat-num {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(90deg, #9A1ABC, #F93686, #FFCC00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #777777;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#cta-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 48px;
+    background-color: #ffffff;
+}
+
+#cta-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cta-sub {
+    font-size: 14px;
+    color: #888888;
+    margin: 4px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cta-btn {
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(90deg, #9A1ABC, #F93686);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+
+#cta-btn:hover {
+    opacity: 0.85;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    #stats-banner {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        border-right: none;
+        border-bottom: 0.5px solid #e0e0e0;
+        padding: 24px;
+    }
+
+    #cta-bar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 24px;
+    }
+}
+
+footer {
+    background: linear-gradient(90deg, #9A1ABC 0%, #9A1ABC 60%, #F93686 100%);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+#sallescla {
+    background: linear-gradient(90deg, #9A1ABC, #F93686, #FFCC00);
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+#sallespart {
+    background: linear-gradient(90deg, #9A1ABC, #F93686, #FFCC00);
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+#titreun {
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    padding: 10px;
+}
+
+#con {
+    padding: 5px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, #9A1ABC, #F93686, #FFCC00) 1;
+}
+
+#seconddive {
+    padding: 5px;
+    margin-top: 16px;
+}
+
+.hover-card {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hover-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-5px);
+    border-image: linear-gradient(90deg, #9A1ABC, #F93686, #FFCC00) 1 !important;
+}
+
+#titrepagesalles {
+    background: linear-gradient(90deg, #9A1ABC, #F93686, #FFCC00);
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}

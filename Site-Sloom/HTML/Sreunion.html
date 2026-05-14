@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="../CSS/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <body>
+        <div class="container-fluid">
+        <header class="row">
+            <img src="../IMG/Logo-titre.png" alt="Logo de mon site" class="col-4" id="logotitre" />
+            <ul class="nav nav-pills col-9 justify-content-end mb-3" id="idheader">
+                <li class="nav-item">
+                    <a class="nav_btn" id="navbtn_index" href="index.html">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav_btn" id="navbtn-offres" href="offres.html">NOS OFFRES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav_btn" id="navbtn-contact" href="contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav_btn" id="navbtn-reservation" href="reservation.php">RÉSERVATION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav_btn" id="navbtn-connexion" href="connexion.php">CONNEXION</a>
+                </li>
+            </ul>
+        </header>
+        <main class="row">
+        <article class="row g-0 align-items-stretch shadow-sm border rounded overflow-hidden">
+            <section class="col-md-9 border rounded p-4 bg-light shadow-sm">
+                <div class="row" id="titrepagesalles">
+                <h3 id="sallescla" class="d-flex justify-content-start mb-3">
+                    Salle de Réunion :
+                </h3>
+            </div>                
+            <h5> Description : </h5>
+                <p>
+                    Une salle de réunion moderne avec une grande table en bois et des chaises ergonomiques. Équipée d'un écran tectile pour les vidéoconférences et les préstations
+                    professionnelles.
+                </p>
+                <h5> Caractéristique et services : </h5>
+                <li>
+                    <p>
+                        Design : Il s'agit d'une salle de réunion moderne, pensée pour l'efficacité et le confort.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Fonctionnalité : Elle est parfaitement équipée pour les visioconférences et toutes vos présentations professionnelles.
+                    </p>
+                </li>   
+                <li> 
+                    <p>
+                        Ambiance : Un cadre discret et professionnel pour assurer la confidentialité de vos échanges.
+                    </p>
+                </li>
+                <h5>Le Matériels : </h5>
+                <p>Pour garantir confort et disponibilité, SLOOM a prévu 1 salle dédiées à ce type de coworking.
+                    Chacune de ces salles est configurée pour accueillir un flux de travail dynamique :
+                    <li>
+                        <p> Table et Assises : La salle dispose d'une grande table en bois et de chaises ergonomiques, assurant le confort de tous les participants.
+                            Technologie : Elle est équipée d'un écran tactile de dernière génération, simplifiant l'affichage, le partage de documents et les interactions en réunion..</p>
+                    </li>
+                    <li>
+                        <p>Postes Fixes : De plus, 5 postes fixes sont à disposition par salle pour ceux nécessitant une installation plus stable ou un équipement spécifique.</p>
+                    </li>
+                    <li>
+                        <p>Postes Nomades : La salle peut contenir jusqu'à 10 clients nomades.</p>
+                    </li>
+                    <h5 class="titreh5">Les Tarifs :</h5>
+                    <article class="row text-center list-unstyled">
+                      <section class="col-md-4 mb-3 border rounded p-3 bg-light">
+                        <h6 class="fw-bold">Pour 1 heure :</h6>
+                        <p class="mb-1">35€</p>
+                        <p class="text-muted small">33.5€ pour les étudiants</p>
+                      </section>
+                    
+                      <section class="col-md-4 mb-3 border rounded p-3 bg-light">
+                        <h6 class="fw-bold">Pour 1/2 journée :</h6>
+                        <p class="mb-1">120€</p>
+                        <p class="text-muted small">115€ pour les étudiants</p>
+                      </section>
+                    
+                      <section class="col-md-4 mb-3 border rounded p-3 bg-light">
+                        <h6 class="fw-bold">Pour 1 journée :</h6>
+                        <p class="mb-1">200€</p>
+                        <p class="text-muted small">195€ pour les étudiants</p>
+                      </section>
+                    </article>
+            </section>
+                <aside class="col-md-3 border rounded bg-light shadow-sm d-flex align-items-center justify-content-center">
+                    <img class="img-fluid rounded" style="max-height: 90%;" alt="Accueil" src="../IMG/Sreunion.jpg">
+                </aside>
+                <nav class="d-flex justify-content-center p-3">
+                    <a class="nav_btn" id="navbtn_retour" href="offres.html">← Retour</a>
+                </nav>
+            </article>
+        </section>
+    </main>
+            <footer class="row">
+                <div id="footerdiv">
+                    <section class="col-12 text-center">
+                        <a href="index.html">Accueil</a>
+                        <a href="offres.html">Nos Offres</a>
+                        <a href="contact.html">Contact</a>
+                        <p>
+                            SLOOM Site Officiel
+                        </p>
+                    </section>
+                </div>
+            </footer>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+    </body>
+</html>
