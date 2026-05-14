@@ -52,9 +52,8 @@ Projet_SLOOM/
 ## ⚙️ Installation
 
 ### Prérequis
-- Un serveur web local (ex: [XAMPP](https://www.apachefriends.org/), [WAMP](https://www.wampserver.com/))
 - Python 3.x
-- Un gestionnaire de base de données (ex: phpMyAdmin)
+- Un serveur web local avec MySQL et PHP
 
 ### Étapes
 
@@ -69,9 +68,46 @@ Projet_SLOOM/
    - Importer le fichier `sloom_BDD.sql`
 
 3. **Lancer le site web**
-   - Placer le dossier `Site-Sloom` dans le répertoire `htdocs` de XAMPP (ou `www` de WAMP)
+
+   <details>
+   <summary>🪟 Windows</summary>
+
+   - Installer [XAMPP](https://www.apachefriends.org/) ou [WAMP](https://www.wampserver.com/)
+   - Placer le dossier `Site-Sloom` dans `C:/xampp/htdocs/` (XAMPP) ou `C:/wamp/www/` (WAMP)
    - Démarrer Apache et MySQL depuis le panneau de contrôle
    - Accéder au site via `http://localhost/Site-Sloom/HTML/index.html`
+
+   </details>
+
+   <details>
+   <summary>🍎 Mac</summary>
+
+   - Installer [XAMPP pour Mac](https://www.apachefriends.org/)
+   - Placer le dossier `Site-Sloom` dans `/Applications/XAMPP/htdocs/`
+   - Démarrer Apache et MySQL depuis le panneau de contrôle XAMPP
+   - Accéder au site via `http://localhost/Site-Sloom/HTML/index.html`
+
+   </details>
+
+   <details>
+   <summary>🐧 Linux</summary>
+
+   - Installer Apache, PHP et MySQL :
+     ```bash
+     sudo apt install apache2 php mysql-server libapache2-mod-php php-mysql
+     ```
+   - Placer le dossier `Site-Sloom` dans `/var/www/html/`
+     ```bash
+     sudo cp -r Site-Sloom /var/www/html/
+     ```
+   - Démarrer les services :
+     ```bash
+     sudo systemctl start apache2
+     sudo systemctl start mysql
+     ```
+   - Accéder au site via `http://localhost/Site-Sloom/HTML/index.html`
+
+   </details>
 
 4. **Lancer l'application Python**
    ```bash
